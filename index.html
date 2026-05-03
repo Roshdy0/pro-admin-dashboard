@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="library/Font Awesome/7.2.0/css/all.css" />
+    <link rel="stylesheet" href="library/Bootstrap/bootstrap.css" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="dashboard row">
+        <aside class="sidebar col-2">
+            <div class="test">
+                <h2>Dashboard</h2>
+                <nav>
+                    <ul>
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#analytics">Analytics</a></li>
+                        <li><a href="#reports">Reports</a></li>
+                        <li><a href="#settings">Settings</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>    
+
+        <main class="content col-10">
+            <header class="top-bar">
+                <h1>Welcome to Dashboard</h1>
+                <div class="search-bar" role="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" placeholder="Search here..." aria-label="Search" />
+                </div>
+                <div class="user-info">
+                    <i class="fa-solid fa-user"></i>
+                    <span>User</span>
+                </div>
+            </header>
+
+            <div class="second-bar row">
+                <div class="col-12 col-lg-6 direction">
+                    <a href="#" class="home-icon">
+                        <i class="fa-solid fa-house"></i>   
+                    </a>
+                    <div class="vertical-divider"></div>
+                    <ul class="breadcrumb-list">
+                        <li><a href="#" class="home">Home</a></li>
+                        <li class="separator"><i class="fa-solid fa-chevron-right"></i></li>
+                        <li class="active section-name">Dashboard</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-6 filter-group">
+                    <button class="filter-btn active" type="button">Today</button>
+                    <button class="filter-btn" type="button">7d</button>
+                    <button class="filter-btn" type="button">2w</button>
+                    <button class="filter-btn" type="button">1m</button>
+                    <button class="filter-btn" type="button">3m</button>
+                    <button class="filter-btn" type="button">6m</button>
+                    <button class="filter-btn" type="button">1y</button>
+                </div>
+            </div>
+
+            <div class="sections">
+                <!-- Start Section Home -->
+                <section class="home page active">
+                    <div class="cards">
+                        <div class="card">
+                            <h3>Total Users</h3>
+                            <p class="number">1,234</p>
+                        </div>
+                        <div class="card">
+                            <h3>Revenue</h3>
+                            <p class="number">$45,678</p>
+                        </div>
+                        <div class="card">
+                            <h3>Orders</h3>
+                            <p class="number">567</p>
+                        </div>
+                        <div class="card">
+                            <h3>Growth</h3>
+                            <p class="number">+23%</p>
+                        </div>
+                    </div>
+                    <div class="row chart-section section">
+                        <div class="col-md-5 d-sm-none d-md-block chart visitors">
+                            <div class="chart-container" style="height: 250px;">
+                                <canvas id="visitorsChart"></canvas>
+                                <div class="chart-footer">
+                                    <span class="trend-badge">10% higher than last month</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-2 average">
+                            <div class="stats-card">
+                                <h3 class="stats-title">Monthly Average</h3>
+                                <div class="stats-group">
+                                    <span class="stats-value blue">9600</span>
+                                    <span class="stats-label">Visitors</span>
+                                </div>
+                                <div class="stats-group">
+                                    <span class="stats-value red">$450<sup>k</sup></span>
+                                    <span class="stats-label">Sales</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-5 chart sales">
+                            <div class="chart-container" style="height: 250px;">
+                                <canvas id="salesChart"></canvas>
+                                <div class="chart-footer">
+                                    <span class="trend-badge blue">12% higher than last month</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row team section">
+                        <div class="col-md-12 col-lg-7 activity">
+                            <h3 class="card-title">Team Activity</h3>
+                            
+                            <div class="item">
+                                <div class="time">
+                                    <span>10:30 AM</span>
+                                    <span class="badge new">New</span>
+                                </div>
+                                <div class="details">
+                                    <h6>Earth - Admin Dashboard</h6>
+                                    <p class="text-secondary">by Elnathan Lois</p>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="bar">
+                                        <div class="fill" style="width: 35%;"></div>
+                                    </div>
+                                    <span class="text-secondary">(225 of 700gb)</span>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="time">
+                                    <span>11:30 AM</span>
+                                    <span class="badge new">task</span>
+                                </div>
+                                <div class="details">
+                                    <h6>Bootstrap Gallery Admin Templates</h6>
+                                    <p class="text-secondary">by Patrobus Nicole</p>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="bar">
+                                        <div class="fill" style="width: 95%;"></div>
+                                    </div>
+                                    <span class="text-secondary">90% completed</span>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="time">
+                                    <span>12:50 PM</span>
+                                    <span class="badge closed">Closed</span>
+                                </div>
+                                <div class="details">
+                                    <h6>Bootstrap Admin Themes</h6>
+                                    <p class="text-secondary">by Abilene Omega</p>
+                                </div>
+                                <div class="activity-sparkline">
+                                    <canvas id="sparklineChart" width="100" height="30"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-5 tasks">
+                            <div class="card">
+                                <h3 class="card-title">Tasks</h3>
+                                <div class="chart-wrapper">
+                                    <canvas id="tasksDoughnutChart"></canvas>
+                                </div>
+                                
+                                <div class="stats">
+                                    <div class="item">
+                                        <i class="fa-solid fa-triangle yellow"></i>
+                                        <span class="number">7</span>
+                                        <span class="text">Ongoing</span>
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa-solid fa-triangle blue"></i>
+                                        <span class="number">9</span>
+                                        <span class="text">Pending</span>
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa-solid fa-triangle red"></i>
+                                        <span class="number">12</span>
+                                        <span class="text">Completed</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Section Home -->
+
+                <!-- Start Section Analytics -->
+                <section class="analytics page">
+                    <p>Analytics</p>
+                </section>
+                <!-- End Section Analytics -->
+
+                <!-- Start Section Reports -->
+                <section class="reports page">
+                    <p>Reports</p>
+                </section>
+                <!-- End Section Reports -->
+
+                <!-- Start Section Settings -->
+                <section class="settings page">
+                    <p>Settings</p>
+                </section>
+                <!-- End Section Settings -->
+            </div>
+        </main>
+    </div>
+
+    <script src="library/jquery.js"></script>
+    <script src="library/Font Awesome/7.2.0/js/all.js"></script>
+    <script src="library/Bootstrap/bootstrap.bundle.js"></script>
+    <script src="library/chart.js-4.5.1/package/dist/chart.umd.js"></script>
+    <script src="js/char.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
